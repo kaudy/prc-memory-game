@@ -37,7 +37,7 @@ const checkEndGame = () => {
 	if (disabledCards.length === totalCards) {
 		clearInterval(this.loop);
 		//alert(`Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi de: ${timer.innerHTML}`);
-		$('#modalBody').text(`Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi de: ${timer.innerHTML} segundos`);
+		$('#modalBody').text(`Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi de ${timer.innerHTML} segundos`);
 		$('#finishModal').modal('show');
 	}
 }
