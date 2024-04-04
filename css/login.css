@@ -21,14 +21,14 @@
 
 
 .login__header h1 {
-  color: #333;
+  color: #00448b;
   font-size: 1.5em;
 }
 
 .login__input {
-  border: 2px solid #333;
+  border: 2px solid #00448b;
   border-radius: 8px;
-  color: #333;
+  color: #00448b;
   font-size: 1em;
   margin-bottom: 15px;
   max-width: 300px;
@@ -38,8 +38,8 @@
 }
 
 .login__button {
-  background-color: #00b5cc;
-  border: 3px solid #b2df28;
+  background-color: #f41737;
+  border: 3px solid #00448b;
   border-radius: 8px;
   color: #fff;
   cursor: pointer;
