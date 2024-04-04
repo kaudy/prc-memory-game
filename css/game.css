@@ -26,7 +26,7 @@ header {
 .grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 15px;
+  gap: 5px;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -35,7 +35,7 @@ header {
 .card {
   aspect-ratio: 3/4;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 2px;
   position: relative;
   transition: all 400ms ease;
   transform-style: preserve-3d;
@@ -49,7 +49,7 @@ header {
   background-size: cover;
   background-position: center;
   border: 5px solid #f41737;
-  border-radius: 5px;
+  border-radius: 2px;
   transition: all 400ms ease;
 }
 
@@ -71,9 +71,48 @@ header {
   opacity: 0.5;
 }
 
+#modalTitle {
+  color: #f41737;
+}
+#modalBody {
+  color: #00448b;
+}
+
+#buttonNewGame {
+  background-color: #00448b;
+  border: 3px solid #f41737;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  max-width: 300px;
+  padding: 15px;
+  width: 100%;
+}
+
+#buttonPlayAgain {
+  background-color: #f41737;
+  border: 3px solid #00448b;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  max-width: 300px;
+  padding: 15px;
+  width: 100%;
+}
+
 @media screen and (max-width:920px) {
   .grid {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
+  }
+}
+@media screen and (max-width:500px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  header {
+    font-size: 0.7em;
   }
 }

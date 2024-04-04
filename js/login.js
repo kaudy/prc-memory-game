@@ -1,4 +1,5 @@
 const input = document.querySelector('.login__input');
+const dificult = document.querySelector('.login__select');
 const button = document.querySelector('.login__button');
 const form = document.querySelector('.login-form');
 
@@ -15,7 +16,11 @@ const handleSubmit = (event) => {
   event.preventDefault();
 
   localStorage.setItem('player', input.value);
+  localStorage.setItem('dificult', dificult.value);
   window.location = 'pages/game.html';
+}
+
+window.onload = () => {
 }
 
 input.addEventListener('input', validateInput);
