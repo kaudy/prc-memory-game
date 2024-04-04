@@ -19,7 +19,9 @@ const Allcharacters = [
 	'lucao',
 	'messias',
 	'robinho',
-	'sidao'
+	'sidao',
+	'tcheco',
+	'busao'
 ];
 
 const createElement = (tag, className) => {
@@ -36,8 +38,8 @@ const checkEndGame = () => {
 
 	if (disabledCards.length === totalCards) {
 		clearInterval(this.loop);
-		//alert(`Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi de: ${timer.innerHTML}`);
-		$('#modalBody').text(`Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi de ${timer.innerHTML} segundos`);
+		$('#modalTitle').text(`Parabéns, ${spanPlayer.innerHTML}!`);
+		$('#modalBody').text(`Seu tempo foi de ${timer.innerHTML} segundos`);
 		$('#finishModal').modal('show');
 	}
 }
