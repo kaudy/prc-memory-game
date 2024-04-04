@@ -1,6 +1,6 @@
-<h1>Memory Card</h1> 
+<h1>Jogo da Memória Tricolor</h1> 
 
-<img src="images/logo.png" alt="Image" height="250" width="500">
+<img src="images/escudo.png" alt="Image" >
 
 
 
