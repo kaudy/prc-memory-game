@@ -6,6 +6,7 @@ let totalCards = 0;
 const Allcharacters = [
 	'alex_nemetz',
 	'bruno',
+	'carlinhos',
 	'cristiano',
 	'eltinho',
 	'fabio_magrao',
@@ -139,6 +140,7 @@ const loadGame = (dificult) => {
 }
 
 const startTimer = () => {
+	timer.innerHTML = 0;
 	this.loop = setInterval(() => {
 		const currentTime = +timer.innerHTML;
 		timer.innerHTML = currentTime + 1;
